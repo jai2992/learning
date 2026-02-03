@@ -4,9 +4,9 @@ import time
 def dec(func):
     def wrapper():
         start = datetime.now()
-        func()
+        results = func()
         end = datetime.now()
-
+        return results
         print("execution time in seconds : ", (end-start).total_seconds())
     return wrapper
 
