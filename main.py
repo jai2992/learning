@@ -6,8 +6,8 @@ def dec(func):
         start = datetime.now()
         results = func()
         end = datetime.now()
-        return results
         print("execution time in seconds : ", (end-start).total_seconds())
+        return results
     return wrapper
 
 @dec
